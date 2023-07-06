@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- https://quizapp-firebase-11db1.web.app -->
+
+<body>
+
+  <h1 style="text-align: center; position: absolute; top: 10px;">Quiz App</h1>
+
+  <div class="quizcontainer" id="quizcontainer">
+    <div class="quiz-header">
+      <h2 id="dispQuestion">Question Text</h2>
+      <div class="quesno" id="" style="position: absolute; bottom: 510px; right: 370px;">
+        <span id="currentQueNo"></span>/<span id="totalQues"></span>
+      </div>
+      <div id="answerParent" class="button-container">
+
+      </div>
+
+    </div>
+    <button id="next" onclick="nextQue()">Next</button>
+  </div>
+
+
+  <div class="endquiz" id="endquiz" style="display: none;">
+    
+  </div>
+  
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
